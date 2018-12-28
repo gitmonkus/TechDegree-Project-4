@@ -2,3 +2,15 @@
 // .img--logo
 // .img--frame
 // .img--avatar
+
+.img--frame {
+    width: $width-100;
+}
+.img--avatar {
+    width: 50%;
+    margin: 2em 0;
+}
+.img--logo {
+    margin-top: $margin-top;
+
+}

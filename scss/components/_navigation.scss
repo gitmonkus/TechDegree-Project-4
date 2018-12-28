@@ -1,2 +1,12 @@
 // Navigation:
 // .nav__item
+.nav {
+    @include flex(flex, column, wrap, center);
+}
+
+.nav__item {
+    @include nav($primary-color, $link-radius, $link-color, $link-hover-color);
+    a {
+        display: $display-block;
+    }
+}

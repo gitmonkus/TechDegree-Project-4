@@ -2,3 +2,20 @@
 // .form
 // .form__label--hidden
 // .form__input
+
+.form {
+    @include flex (flex, column, wrap, center);
+    .img--avatar {
+        margin: 2em auto;
+    }
+    .form__label--hidden {
+        display: none;
+    }
+    .form__input {
+        border: none;
+        border-bottom: .4em solid $primary-color;
+        text-align: $align-left;
+        margin-bottom: 2em;
+        padding-left: $padding-left;
+    }
+}

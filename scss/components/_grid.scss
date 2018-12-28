@@ -14,3 +14,14 @@
 //     .grid__col--12
 //     .centered
 //     .theme__colors
+
+.container {
+    padding: 3em;
+    color: $font-lighten;
+}
+.grid__row {
+    text-align: center;
+    p {
+        text-align: left;
+    }
+}

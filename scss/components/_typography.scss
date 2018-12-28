@@ -4,3 +4,16 @@
 //     .blockquote
 //     .headline--primary
 //     .headline--secondary
+
+.headline--primary {
+    padding-right: 4em;
+    color: $primary-color;
+
+}
+.headline--secondary {
+    text-align: $align-left;
+    margin-top: 7em;
+}
+.blockquote {
+    @include blockquote($font-size-26, $align-left, $border-left, $border-radius, $padding-left)
+}

@@ -5,3 +5,7 @@
 //     .btn--warning
 //     .btn--info
 //     .theme__colors
+
+.btn--default {
+    @include btn($primary-color, $border-radius, $tertiary-color);
+}
