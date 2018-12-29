@@ -63,4 +63,16 @@
     font-weight: bold;
 }
 
+// navigation ============================== /
+// Breakpoints =========================== /
+$breakpoints: ('769': 769px);
 
+@mixin mediaq($breakpoint) { 
+	$value: map-get($breakpoints, $breakpoint);
+	$size: map-get($breakpoints, '769'); 
+	@if $value >= $size {
+		@media (min-width: $value) {
+        @content; 
+        }
+    } 
+}

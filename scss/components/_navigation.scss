@@ -1,8 +1,6 @@
 // Navigation:
 // .nav__item
-.nav {
-    @include flex(flex, column, wrap, center);
-}
+
 
 .nav__item {
     @include nav($primary-color, $link-radius, $link-color, $link-hover-color);
@@ -10,5 +8,9 @@
         display: $display-block;
         text-align: center;
         font-size: 18px;
+       @include mediaq('769') {
+           padding: .9em .4em .4em .4em;
+       }
     }
+    
 }

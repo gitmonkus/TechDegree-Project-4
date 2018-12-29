@@ -17,16 +17,26 @@
 
 .container {
     padding: 1.3em;
+    max-width: $max-width;
+    margin: 0 auto;
 }
 .grid__row {
     text-align: $align-left;
     margin-bottom: $margin-bottom-big;
     & .card {
         padding: 0 1.5em;
+        @include mediaq('769') {
+            margin: -5em 2em 0;
+        }
     }
     &:last-of-type {
         margin-bottom: 1em;
     }
+    @include mediaq('769') {
+        @include flex(flex, row, wrap, space-between);
+        
+      }
+    
 }
 
 .grid__col--3 {
@@ -65,11 +75,24 @@
         @include bttn($grid-8, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
     & .card {
+        @include mediaq('769') {
+            flex: .5;
+        }
         & .headline--secondary {
             margin-top: 5em;
+            @include mediaq('769') {
+                margin-top: 9em;
+            
+            }
         }
     }
 }
+
+// .grid__col--9 {
+//     @include mediaq('769') {
+//         @include flex(flex, row, wrap, space-between);
+//       }
+// }
 .grid__col--12 {
     @include flex(flex, column, wrap, center);
     margin-top: 3em;
