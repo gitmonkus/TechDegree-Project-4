@@ -20,8 +20,48 @@
     color: $font-lighten;
 }
 .grid__row {
+    text-align: $align-left;
+    margin-bottom: $margin-bottom-big;
+}
+
+.grid__col--3 {
     text-align: center;
-    p {
-        text-align: left;
+    &.theme__colors {
+        text-align: $align-left;
+        @include bttn($grid-3, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+.grid__col--4 {
+    &.theme__colors {
+        @include bttn($grid-4, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+.grid__col--5 {
+    &.theme__colors {
+        @include bttn($grid-5, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+.grid__col--6 {
+    text-align: center;
+    &.theme__colors {
+        text-align: $align-left;
+        @include bttn($grid-6, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+
+.grid__col--7 {
+    &.theme__colors {
+        @include bttn($grid-7, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+.grid__col--8 {
+    &.theme__colors {
+        @include bttn($grid-8, $border-radius, $grid-text, $margin-bottom-small);
+    }
+}
+.grid__col--12 {
+    @include flex(flex, column, wrap, center);
+    &.theme__colors {
+        @include bttn($grid-12, $border-radius, $grid-text, $margin-bottom-small);
     }
 }

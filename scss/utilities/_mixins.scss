@@ -48,15 +48,16 @@
 }
 
 // button ============================== /
-@mixin btn ($button-color, $border-radius, $color) {
-    // list-style: none;
+@mixin bttn ($button-color, $border-radius, $color, $margin, $upper: null) {
     height: $link-height;
     background: $button-color;
     border-radius: $border-radius;
-    // text-decoration: none;
     color: $color;
-    padding-top: $top-padding;
+    padding: $top-padding 1em;
     height: $height-100;
+    margin-bottom: $margin;
+    text-transform: $upper;
+    font-weight: bold;
 }
 
 

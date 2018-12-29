@@ -15,7 +15,8 @@
         border: none;
         border-bottom: .4em solid $primary-color;
         text-align: $align-left;
-        margin-bottom: 2em;
+        margin: 0 1em 2em 1em;
         padding-left: $padding-left;
+        height: $link-height;
     }
 }
