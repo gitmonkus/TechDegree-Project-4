@@ -4,16 +4,28 @@
 //     .blockquote
 //     .headline--primary
 //     .headline--secondary
+.container {
+    font-family: 'calibri', sans-serif;
+    color: $font-lighten;
+    p {
+        font-size: 17px;
+        line-height: 1.5em;
+    }
+}
 
 .headline--primary {
-    padding-right: 4em;
+    padding: 0 .7em;
+    margin-bottom: 1em;
     color: $primary-color;
+    font-size: 30px;
 
 }
 .headline--secondary {
     text-align: $align-left;
-    margin-top: 4em;
+    padding: 0 1em;
+    margin-top: 3em;
+    font-weight: lighter;
 }
 .blockquote {
-    @include blockquote($font-size-26, $align-left, $border-left, $border-radius, $padding-left)
+    @include blockquote($font-size-25, $align-left, $border-left, $border-radius, $padding-left)
 }

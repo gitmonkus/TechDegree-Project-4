@@ -15,6 +15,7 @@
 @mixin nav ($back-color, $border-radius, $color, $hover-color) {
     list-style: none;
     height: $link-height;
+    margin: 0 1em;
     &:hover {
         background: $back-color;
         border-radius: $border-radius;
@@ -41,21 +42,23 @@
 // blockquote ============================== /
 @mixin blockquote ($fontsize, $align, $borderleft, $borderradius, $paddingleft) {
     font-size: $fontsize;
-    text-align: $align;
+    // text-align: $align-justify;
     border-left: $borderleft;
     border-radius: $borderradius;
     padding-left: $paddingleft;
+    margin: 1em;
+    font-style: italic;
 }
 
 // button ============================== /
-@mixin bttn ($button-color, $border-radius, $color, $margin, $upper: null) {
-    height: $link-height;
+@mixin bttn ($button-color, $border-radius, $color, $padding, $margin: null, $upper: null) {
+    height: $grid-height;
     background: $button-color;
     border-radius: $border-radius;
     color: $color;
-    padding: $top-padding 1em;
+    padding: $padding;
     height: $height-100;
-    margin-bottom: $margin;
+    margin: $margin;
     text-transform: $upper;
     font-weight: bold;
 }

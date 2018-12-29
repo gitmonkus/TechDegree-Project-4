@@ -16,52 +16,64 @@
 //     .theme__colors
 
 .container {
-    padding: 3em;
-    color: $font-lighten;
+    padding: 1.3em;
 }
 .grid__row {
     text-align: $align-left;
     margin-bottom: $margin-bottom-big;
+    & .card {
+        padding: 0 1.5em;
+    }
+    &:last-of-type {
+        margin-bottom: 1em;
+    }
 }
 
 .grid__col--3 {
     text-align: center;
     &.theme__colors {
         text-align: $align-left;
-        @include bttn($grid-3, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-3, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
 }
 .grid__col--4 {
     &.theme__colors {
-        @include bttn($grid-4, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-4, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
 }
 .grid__col--5 {
     &.theme__colors {
-        @include bttn($grid-5, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-5, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
 }
 .grid__col--6 {
     text-align: center;
+    padding: 0 1em;
     &.theme__colors {
         text-align: $align-left;
-        @include bttn($grid-6, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-6, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
 }
 
 .grid__col--7 {
     &.theme__colors {
-        @include bttn($grid-7, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-7, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
     }
 }
 .grid__col--8 {
     &.theme__colors {
-        @include bttn($grid-8, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-8, $border-radius, $grid-text, $grid-padding, $margin-bottom-small);
+    }
+    & .card {
+        & .headline--secondary {
+            margin-top: 5em;
+        }
     }
 }
 .grid__col--12 {
     @include flex(flex, column, wrap, center);
+    margin-top: 3em;
     &.theme__colors {
-        @include bttn($grid-12, $border-radius, $grid-text, $margin-bottom-small);
+        @include bttn($grid-12, $border-radius, $grid-text, $grid-padding);
     }
 }
