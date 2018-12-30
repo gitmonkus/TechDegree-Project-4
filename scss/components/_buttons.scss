@@ -8,20 +8,31 @@
 
 .btn--default {
     @include bttn($secondary-color, $border-radius, $tertiary-color, $button-padding, $margin-bottom, uppercase);
+    @include mediaq('769') {
+        @include bttn($secondary-color, $border-radius, $tertiary-color, $button-padding-769, $margin-bottom, uppercase);
+    }
 }
 .btn--success {
     @include bttn($bttn-success, $border-radius, $tertiary-color, $button-padding, $margin-bottom, uppercase);
-
+    @include mediaq('769') {
+        @include bttn($bttn-success, $border-radius, $tertiary-color, $button-padding-769, $margin-bottom, uppercase);
+    }
 }
 .btn--error {
     @include bttn($bttn-error, $border-radius, $tertiary-color, $button-padding, $margin-bottom, uppercase);
-
+    @include mediaq('769') {
+        @include bttn($bttn-error, $border-radius, $tertiary-color, $button-padding-769, $margin-bottom, uppercase);
+    }
 }
 .btn--warning {
     @include bttn($bttn-warning, $border-radius, $tertiary-color, $button-padding, $margin-bottom, uppercase);
-
+    @include mediaq('769') {
+        @include bttn($bttn-warning, $border-radius, $tertiary-color, $button-padding-769, $margin-bottom, uppercase);
+    }
 }
 .btn--info {
     @include bttn($bttn-info, $border-radius, $tertiary-color, $button-padding, $margin-bottom, uppercase);
-
+    @include mediaq('769') {
+        @include bttn($bttn-info, $border-radius, $tertiary-color, $button-padding-769, $margin-bottom, uppercase);
+    }
 }

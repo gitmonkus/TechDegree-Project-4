@@ -16,5 +16,9 @@ ul {
     @include mediaq('769') {
       @include flex();
       margin-right: 11em;
+      margin-top: 4em;
     }  
+  }
+  p {
+    text-align: $align-left;
   }
