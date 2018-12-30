@@ -1,3 +1,9 @@
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #50DDFC;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -351,12 +357,6 @@ ul {
     display: flex;
     margin-right: 11em;
   }
-}
-
-.link {
-  text-decoration: none;
-  font-weight: bold;
-  color: #50DDFC;
 }
 
 .container {
